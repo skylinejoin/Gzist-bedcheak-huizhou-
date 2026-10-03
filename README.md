@@ -187,14 +187,13 @@ Emulation.setGeolocationOverride → 在页面加载前把坐标注入为真实�
 
 ```text
 1) 把本目录放到任意位置（路径不要含特殊权限问题，例如 E:\my-signin）
-2) 复制 config.example.json → config.json
-3) 运行 Edge，登录学校统一身份认证，并让 Edge 保存账号密码（勾选"保存"）
-4) 建议先跑一次: powershell -ExecutionPolicy Bypass -File build-dll.ps1
+2) 运行 Edge，登录学校统一身份认证，并让 Edge 保存账号密码（勾选"保存"）
+3) 建议先跑一次: powershell -ExecutionPolicy Bypass -File build-dll.ps1
       （生成 Gzist.Win32.dll —— 运行期就不必再编译 C#，控制台进程为零；
         不跑也能用，脚本会自动回退到源码编译）
-5) 双击  1-首次配置向导(录账号+验证).bat     ← 校准坐标 / 验证定位注入
-6) 双击  3-注册每日自动签到.bat              ← 注册计划任务（默认 21:05/21:15/21:25）
-7) 双击  12-一键自检.vbs                     ← 13 项自检，应全部 PASS
+4) 双击  1-首次配置向导(录账号+验证).bat     ← 校准坐标 / 验证定位注入
+5) 双击  3-注册每日自动签到.bat              ← 注册计划任务（默认 21:05/21:15/21:25）
+6) 双击  12-一键自检.vbs                     ← 13 项自检，应全部 PASS
 ```
 
 ### 日常
